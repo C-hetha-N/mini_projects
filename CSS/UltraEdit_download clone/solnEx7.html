@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download UltraEdit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: auto;
+        }
+
+        header {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 2vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .right a {
+            display: flex;
+            align-items: center;
+        }
+
+        .right a svg {
+            padding: 3px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: goldenrod;
+            text-shadow: 0 2px 3px rgba(218, 165, 32, 0.301)
+        }
+
+        .logo {
+            width: 160px;
+            height: 50px;
+        }
+
+        .icon {
+            height: 30px;
+        }
+
+        .icon:hover {
+            background-color: goldenrod;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
+            box-shadow: 0 2px 5px rgba(218, 165, 32, 0.301);
+        }
+
+        main {
+            margin-top: 10vh;
+            text-align: center;
+        }
+
+        main article {
+            padding: 0vh 15vw;
+        }
+
+
+        .text {
+            font-size: 160%;
+        }
+
+        .text h1 {
+            font-weight: 100;
+            font-size: 190%;
+        }
+
+        button {
+            color: white;
+            background-color: #00b6d1;
+            border: none;
+            border-radius: 6px;
+            margin: 5px;
+            padding: 12px 20px;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background-color: rgb(0, 173, 204);
+        }
+
+
+        .version {
+            margin-top: 10vh;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .version h2 {
+            font-weight: 300;
+        }
+
+        .download {
+            margin-top: 10vh;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2vw;
+        }
+
+        .download section {
+            background-color: rgba(211, 211, 211, 0.311);
+            border-radius: 6px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nonh4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+        }
+
+        .download section h4 {
+            font-weight: 100;
+        }
+
+        .download button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .fourthGen {
+            background-color: #5cb85c;
+        }
+
+        .fourthGen:hover {
+            text-decoration-color: lightgray;
+            background-color: rgb(39, 184, 39);
+        }
+
+        @media only screen and (max-width:780px) {
+            .text {
+                font-size: 140%;
+            }
+
+            .download {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media only screen and (max-width:450px) {
+            nav {
+                justify-content: space-around;
+                gap: 10px 10px;
+            }
+
+            .logo {
+                width: 90px;
+                height: 30px;
+            }
+
+            main article {
+                padding: 0vh 5vw;
+            }
+
+            .version {
+                justify-content: center;
+                gap: 0px 10px;
+            }
+
+            .text {
+                font-size: 110%;
+            }
+
+            .download {
+                margin-top: 10vh;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 4vw;
+            }
+
+
+            .nonh4 {
+                display: inline-block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="UltraEdit-Logo.webp" alt="logo">
+            <!-- logo is in yellow and black color -->
+
+            <div class="right">
+                <a href="#">Products <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                <a href="#">Pricing <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                <a href="#">Resources <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+                <a href="#">About us <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></a>
+
+                <img class="icon" src="Languages_icon.jpg" alt="language icon" height="30px">
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <article class="text">
+            <h1>Download <b>UltraEdit</b> for Windows <img src="UltraEdit_Reviews_img.png" alt="Reviews Icon"></h1>
+
+            <p>Download and try UltraEdit before you buy it! This download includes the full windows version of the text
+                editor.</p>
+
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+        </article>
+
+        <article class="version">
+            <img src="ultraedit-circular-logo.jpg" alt="ultraedit-logo" width="50px">
+            <h2>Download UltraEdit</h2>
+            <p>v2023.2(released 2023/12/15) | Hotfix</p>
+        </article>
+
+        <article class="download">
+            <section class="nonh4">
+                <h3>English</h3>
+                <h4> </h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Deutsch</h3>
+                <h4>German</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Italiano</h3>
+                <h4>Italian</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Español</h3>
+                <h4>Spanish</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Français</h3>
+                <h4>French</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Português brasileiro</h3>
+                <h4>Brazilian portuguese</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>日本</h3>
+                <h4>Japanese</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>한국인</h3>
+                <h4>Korean</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>中国</h3>
+                <h4>Chinese</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>中國</h3>
+                <h4>Traditional Chinese</h4>
+                <div>
+                    <button><a href="ue_english.exe">Download 32-bit</a></button>
+                    <button class="fourthGen"><a href="ue_english_64.exe">Download 64-bit</a></button>
+                </div>
+            </section>
+        </article>
+
+    </main>
+</body>
+
+</html>
