@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: rgb(0, 28, 0);
+    color: rgb(0, 186, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Anonymous Pro;
+}
+
+
+
+.container {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3vw;
+    font-weight: 500;
+}
+
+.container div {
+    display: none;
+}
+
+.dots.blink::after {
+    content: '.';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        content: "."
+    }
+
+    33% {
+        content: ".."
+    }
+
+    66% {
+        content: "..."
+    }
+
+    100% {
+        content: ""
+    }
+}
+
+.complete {
+    color: #7f0000;
+}
